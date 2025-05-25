@@ -1,0 +1,29 @@
+{
+    "base": {
+        "value": 0
+    },
+    "dialog": {
+        "value": 1300
+    },
+    "dialogOverlay": {
+        "value": 1299
+    },
+    "fullDialog": {
+        "value": 1200
+    },
+    "fullDialogOverlay": {
+        "value": 1199
+    },
+    "header": {
+        "value": 1100
+    },
+    "hide": {
+        "value": -1
+    },
+    "popover": {
+        "value": 1400
+    },
+    "tooltip": {
+        "value": 1500
+    }
+}

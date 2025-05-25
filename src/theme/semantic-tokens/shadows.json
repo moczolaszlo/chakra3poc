@@ -1,0 +1,42 @@
+{
+    "formFocus": {
+        "value": {
+            "_light": "0 0.125rem 0.1875rem 0 rgba(0, 0, 0, 0.1) inset, 0 0 0 3px var(--colors-purple-70)"
+        }
+    },
+    "inner": {
+        "value": {
+            "_light": "0 0.125rem 0.1875rem 0 rgba(0, 0, 0, 0.1) inset"
+    }
+    },
+    "innerSmall": {
+        "value": {
+            "_light": "0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1) inset"
+        }
+    },
+    "large": {
+        "value": {
+            "_light": "0 0.125rem 1.5rem 0 rgba(0, 0, 0, 0.08)"
+        }
+    },
+    "medium": {
+        "value": {
+            "_light": "0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.06)"
+        }
+    },
+    "outline": {
+        "value": {
+            "_light": "0 0 0 3px var(--colors-purple-70)"
+        }
+    },
+    "small": {
+        "value": {
+            "_light": "0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.06)"
+        }
+    },
+    "tooltip": {
+        "value": {
+            "_light": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2)"
+        }
+    }
+}
