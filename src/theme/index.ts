@@ -1,8 +1,6 @@
-import { createSystem, defaultBaseConfig, defineConfig, mergeConfigs } from "@chakra-ui/react"
-import { animationStyles } from "./animation-styles"
+import { createSystem, defaultBaseConfig, defineConfig } from "@chakra-ui/react"
 import { breakpoints } from "./breakpoints"
 import { globalCss } from "./global-css"
-import { keyframes } from "./keyframes"
 import { layerStyles } from "./layer-styles"
 import { recipes } from "./recipes"
 import { semanticTokens } from "./semantic-tokens"
@@ -17,14 +15,12 @@ const themeConfig = defineConfig({
   globalCss,
   theme: {
     breakpoints,
-    keyframes,
     tokens,
     semanticTokens,
     recipes,
     slotRecipes,
     textStyles,
     layerStyles,
-    animationStyles,
   },
 })
 
