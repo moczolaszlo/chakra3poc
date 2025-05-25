@@ -10,7 +10,7 @@ import { tokens } from "./tokens"
 
 const themeConfig = defineConfig({
   preflight: true,
-  cssVarsPrefix: "bitkit",
+  cssVarsPrefix: "",
   cssVarsRoot: ":where(:root, :host)",
   globalCss,
   theme: {
