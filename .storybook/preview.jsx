@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { bitkitTheme } from '../src/theme/index.js';
+import { bitkitTheme } from '../src/theme/index.ts';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {

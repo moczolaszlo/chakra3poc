@@ -1,27 +1,18 @@
-
-
-/** @type { import('@storybook/react-vite').StorybookConfig } */
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   "stories": [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../src/**/*.stories.tsx"
   ],
   "addons": [
-    "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@chromatic-com/storybook",
-    "@storybook/experimental-addon-test"
+    "@storybook/addon-webpack5-compiler-swc"
   ],
   "framework": {
-    "name": "@storybook/react-vite",
+    "name": "@storybook/react-webpack5",
     "options": {}
   },
-  viteFinal: async (config) => {
-    config.esbuild = {
-      ...config.esbuild,
-       jsx: 'automatic',
-     };
-    return config;
+  refs: {
+    "@chakra-ui/react": { disable: true },
   },
 };
+
 export default config;
