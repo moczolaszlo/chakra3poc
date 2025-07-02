@@ -30,16 +30,9 @@ export const globalCss = defineGlobalStyles({
     "--global-font-body": "fonts.body",
     "--global-color-border": "colors.border",
   },
-  html: {
-    color: "fg",
-    bg: "bg",
-    lineHeight: "1.5",
-    colorPalette: "gray",
-  },
-  "*::placeholder, *[data-placeholder]": {
-    color: "fg.muted/80",
-  },
-  "*::selection": {
-    bg: "colorPalette.emphasized/80",
+  body: {
+    color: 'red',
+    fontFamily: 'body',
+    textStyle: 'body/lg/regular',
   },
 })

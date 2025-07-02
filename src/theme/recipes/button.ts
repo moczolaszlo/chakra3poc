@@ -1,7 +1,7 @@
 import { defineRecipe } from "@chakra-ui/react"
 
 export const buttonRecipe = defineRecipe({
-  className: "chakra-button",
+  className: "bitkit-button",
   base: {
     display: "inline-flex",
     appearance: "none",

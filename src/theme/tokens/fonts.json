@@ -1,8 +1,8 @@
 {
   "body": {
-    "value": "\"Figtree\", sans-serif"
+    "value": "\"Figtree Variable\", sans-serif"
   },
   "mono": {
-    "value": "\"Source Code Pro\", monospace"
+    "value": "\"Source Code Pro Variable\", monospace"
   }
 }

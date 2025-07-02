@@ -1,5 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { bitkitTheme } from '../src/theme/index.ts';
+import Provider from '../src/components/Provider/Provider';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -13,9 +12,9 @@ const preview = {
   },
   decorators: [
     (Story) => (
-      <ChakraProvider value={bitkitTheme}>
+      <Provider>
         <Story />
-      </ChakraProvider>
+      </Provider>
     ),
   ],
 };

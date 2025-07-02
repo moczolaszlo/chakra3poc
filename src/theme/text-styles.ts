@@ -1,90 +1,521 @@
 import { defineTextStyles } from "@chakra-ui/react"
 
 export const textStyles = defineTextStyles({
-  "2xs": {
+  'mono/code-2': {
     value: {
-      fontSize: "2xs",
-      lineHeight: "0.75rem",
+      fontFamily: 'mono',
+      fontSize: '0.75rem',
+      lineHeight: '1rem',
+      letterSpacing: '-0.009375rem',
     },
   },
-  xs: {
+  'mono/code-3': {
     value: {
-      fontSize: "xs",
-      lineHeight: "1rem",
+      fontFamily: 'mono',
+      fontSize: '0.875rem',
+      lineHeight: '1.25rem',
+      letterSpacing: '-0.009375rem',
     },
   },
-  sm: {
+  'sans/size-1/normal': {
     value: {
-      fontSize: "sm",
-      lineHeight: "1.25rem",
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
     },
   },
-  md: {
+  'sans/size-1/semibold': {
     value: {
-      fontSize: "md",
-      lineHeight: "1.5rem",
+      fontWeight: '600',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
     },
   },
-  lg: {
+  'sans/size-1/bold': {
     value: {
-      fontSize: "lg",
-      lineHeight: "1.75rem",
+      fontWeight: '700',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
     },
   },
-  xl: {
+  'sans/size-1/uppercase-bold': {
     value: {
-      fontSize: "xl",
-      lineHeight: "1.875rem",
+      fontWeight: '700',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
     },
   },
-  "2xl": {
+  'sans/size-2/normal': {
     value: {
-      fontSize: "2xl",
-      lineHeight: "2rem",
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
     },
   },
-  "3xl": {
+  'sans/size-2/normal-underline': {
     value: {
-      fontSize: "3xl",
-      lineHeight: "2.375rem",
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      textDecoration: 'underline',
     },
   },
-  "4xl": {
+  'sans/size-2/semibold': {
     value: {
-      fontSize: "4xl",
-      lineHeight: "2.75rem",
-      letterSpacing: "-0.025em",
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
     },
   },
-  "5xl": {
+  'sans/size-2/semibold-underline': {
     value: {
-      fontSize: "5xl",
-      lineHeight: "3.75rem",
-      letterSpacing: "-0.025em",
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      textDecoration: 'underline',
     },
   },
-  "6xl": {
+  'sans/size-2/bold': {
     value: {
-      fontSize: "6xl",
-      lineHeight: "4.5rem",
-      letterSpacing: "-0.025em",
+      fontWeight: '700',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
     },
   },
-  "7xl": {
+  'sans/size-2/uppercase-normal': {
     value: {
-      fontSize: "7xl",
-      lineHeight: "5.75rem",
-      letterSpacing: "-0.025em",
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
     },
   },
-  none: {
-    value: {},
-  },
-  label: {
+  'sans/size-2/uppercase-semibold': {
     value: {
-      fontSize: "sm",
-      lineHeight: "1.25rem",
-      fontWeight: "medium",
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
+    },
+  },
+  'sans/size-3/normal': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'sans/size-3/normal-underline': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+      textDecoration: 'underline',
+    },
+  },
+  'sans/size-3/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'sans/size-3/semibold-underline': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+      textDecoration: 'underline',
+    },
+  },
+  'sans/size-3/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'sans/size-4/normal': {
+    value: {
+      lineHeight: '1.75rem',
+      fontSize: '1.1875rem',
+    },
+  },
+  'sans/size-4/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.75rem',
+      fontSize: '1.1875rem',
+    },
+  },
+  'sans/size-4/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.75rem',
+      fontSize: '1.1875rem',
+    },
+  },
+  'sans/size-5/normal': {
+    value: {
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'sans/size-5/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'sans/size-5/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'sans/size-6/normal': {
+    value: {
+      lineHeight: '2.5rem',
+      fontSize: '1.875rem',
+    },
+  },
+  'sans/size-6/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '2.5rem',
+      fontSize: '1.875rem',
+    },
+  },
+  'sans/size-6/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '2.5rem',
+      fontSize: '1.875rem',
+    },
+  },
+  'sans/size-7/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '3rem',
+      fontSize: '2.25rem',
+    },
+  },
+  'sans/size-7/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '3rem',
+      fontSize: '2.25rem',
+    },
+  },
+  'sans/size-8/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '3.75rem',
+      fontSize: '3rem',
+    },
+  },
+  'sans/size-8/bold': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '3.75rem',
+      fontSize: '3rem',
+    },
+  },
+  'display/lg': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '3.75rem',
+      fontSize: '3rem',
+    },
+  },
+  'display/sm': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '3rem',
+      fontSize: '2.25rem',
+    },
+  },
+  'heading/h1': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '2.5rem',
+      fontSize: '1.875rem',
+    },
+  },
+  'heading/h2': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'heading/h3': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.75rem',
+      fontSize: '1.1875rem',
+    },
+  },
+  'heading/h4': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'heading/h5': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'heading/h6': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
+    },
+  },
+  'body/sm/regular': {
+    value: {
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+    },
+  },
+  'body/sm/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+    },
+  },
+  'body/md/regular': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'body/md/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'body/md/underline': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      textDecoration: 'underline',
+    },
+  },
+  'body/lg/regular': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'body/lg/semibold': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'body/lg/underline': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+      textDecoration: 'underline',
+    },
+  },
+  'code/md': {
+    value: {
+      fontFamily: 'mono',
+      fontSize: '0.75rem',
+      lineHeight: '1rem',
+      letterSpacing: '-0.009375rem',
+    },
+  },
+  'code/lg': {
+    value: {
+      fontFamily: 'mono',
+      fontSize: '0.875rem',
+      lineHeight: '1.25rem',
+      letterSpacing: '-0.009375rem',
+    },
+  },
+  'comp/button/sm': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/button/md': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/button/lg': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/notification/title': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/notification/message': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/notification/message-link': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+      textDecoration: 'underline',
+    },
+  },
+  'comp/notification/button': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/input/label': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/input/helperText': {
+    value: {
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+    },
+  },
+  'comp/link/md': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/link/md-hover': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      textDecoration: 'underline',
+    },
+  },
+  'comp/link/lg': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/link/lg-hover': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+      textDecoration: 'underline',
+    },
+  },
+  'comp/data/sm': {
+    value: {
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/data/md': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'comp/data/lg': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '2.5rem',
+      fontSize: '1.875rem',
+    },
+  },
+  'comp/tabs/line': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/tabs/contained': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1.5rem',
+      fontSize: '1rem',
+    },
+  },
+  'comp/tabs/contained-secondary': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/tag/sm': {
+    value: {
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+    },
+  },
+  'comp/tag/md': {
+    value: {
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+    },
+  },
+  'comp/badge/sm': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '1rem',
+      fontSize: '0.75rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
+    },
+  },
+  'comp/dialog/title': {
+    value: {
+      fontWeight: '700',
+      lineHeight: '2.25rem',
+      fontSize: '1.5rem',
+    },
+  },
+  'comp/dialog/label': {
+    value: {
+      fontWeight: '600',
+      lineHeight: '1.25rem',
+      fontSize: '0.875rem',
+      letterSpacing: '0.009375rem',
+      textTransform: 'uppercase',
     },
   },
 })
