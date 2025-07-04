@@ -1,16 +1,17 @@
-// import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import Button from "./Button";
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 
-const meta: Meta<typeof Button> = {
+import Button, { ButtonProps } from './Button';
+
+const meta: Meta<ButtonProps> = {
   component: Button,
-}
+  args: {
+    children: 'Button label',
+    disabled: false,
+    size: 'lg',
+    variant: 'primary',
+  },
+};
 
 export default meta;
 
-export const Primary: StoryObj<typeof Button> = {
-  args: {
-    children: "Click Me",
-    onClick: () => alert("Button clicked!"),
-  },
-};
+export const Default: StoryObj<ButtonProps> = {};

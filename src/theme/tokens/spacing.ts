@@ -2,4 +2,6 @@ import { defineTokens } from "@chakra-ui/react";
 import object from "./sizesAndSpacing.json";
 
 
-export const spacing = defineTokens.spacing(object);
+const spacing = defineTokens.spacing(object);
+
+export default spacing;

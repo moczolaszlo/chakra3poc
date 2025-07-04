@@ -1,4 +1,6 @@
 import { defineTokens } from "@chakra-ui/react"
-import object from "./fonts.json" assert { type: "json" }
+import object from "./fonts.json"
 
-export const fonts = defineTokens.fonts(object)
+const fonts = defineTokens.fonts(object)
+
+export default fonts

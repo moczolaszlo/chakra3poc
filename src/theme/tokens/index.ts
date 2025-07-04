@@ -1,13 +1,13 @@
-import { colors } from "./colors"
-import { fonts } from "./fonts"
-import { fontSizes } from "./fontSizes"
-import { fontWeights } from "./fontWeights"
-import { radii } from "./radii"
-import { spacing } from "./spacing"
-import { sizes } from "./sizes"
-import { zIndex } from "./zIndex"
+import colors from "./colors"
+import fonts from "./fonts"
+import fontSizes from "./fontSizes"
+import fontWeights from "./fontWeights"
+import radii from "./radii"
+import spacing from "./spacing"
+import sizes from "./sizes"
+import zIndex from "./zIndex"
 
-export const tokens = {
+const tokens = {
   colors,
   fonts,
   fontSizes,
@@ -18,4 +18,4 @@ export const tokens = {
   zIndex,
 }
 
-console.log("tokens", tokens)
+export default tokens

@@ -1,4 +1,6 @@
 import { defineSemanticTokens } from "@chakra-ui/react";
-import object from "./shadows.json" assert { type: "json" };
+import dataObject from "./shadows.json";
 
-export const shadows = defineSemanticTokens.shadows(object);
+const shadows = defineSemanticTokens.shadows(dataObject);
+
+export default shadows;

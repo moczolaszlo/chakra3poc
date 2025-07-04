@@ -1,6 +1,6 @@
-import { defineTextStyles } from "@chakra-ui/react"
+import { defineTextStyles, TextStyles } from "@chakra-ui/react";
 
-export const textStyles = defineTextStyles({
+const dataObject = {
   'mono/code-2': {
     value: {
       fontFamily: 'mono',
@@ -518,4 +518,17 @@ export const textStyles = defineTextStyles({
       textTransform: 'uppercase',
     },
   },
-})
+};
+
+const withDots = (obj: TextStyles): TextStyles => {
+  const result: TextStyles = {};
+  Object.keys(obj).forEach((key) => {
+    const newKey = key.replace(/\//g, '.');
+    result[newKey] = obj[key];
+  });
+  return {...obj, ...result}
+}
+
+const textStyles = defineTextStyles(withDots(dataObject));
+
+export default textStyles;

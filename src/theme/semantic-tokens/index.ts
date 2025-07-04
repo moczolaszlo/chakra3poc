@@ -1,7 +1,9 @@
-import { colors } from "./semanticColors"
-import { shadows } from "./shadows"
+import colors from "./semanticColors"
+import shadows from "./shadows"
 
-export const semanticTokens = {
+const semanticTokens = {
   colors,
   shadows,
-}
+};
+
+export default semanticTokens;

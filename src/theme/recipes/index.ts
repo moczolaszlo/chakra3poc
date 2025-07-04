@@ -1,5 +1,7 @@
-import { buttonRecipe } from "./button"
+import button from "./Button.recipe"
 
-export const recipes = {
-  button: buttonRecipe,
-}
+const recipes = {
+  button,
+};
+
+export default recipes;

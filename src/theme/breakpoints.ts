@@ -1,7 +1,8 @@
-export const breakpoints = {
-  sm: "480px",
-  md: "768px",
-  lg: "1024px",
-  xl: "1280px",
-  "2xl": "1536px",
-}
+const breakpoints = {
+  'base': '0rem',
+  'tablet': '53rem', // 848px
+  'desktip': '80rem', // 1280px
+  'wideDesktop': '101rem', // 1616px
+};
+
+export default breakpoints;

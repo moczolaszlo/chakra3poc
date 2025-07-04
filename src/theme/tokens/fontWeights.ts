@@ -1,4 +1,6 @@
 import { defineTokens } from "@chakra-ui/react";
-import object from "./fontWeights.json" assert { type: "json" };
+import object from "./fontWeights.json";
 
-export const fontWeights = defineTokens.fontWeights(object)
+const fontWeights = defineTokens.fontWeights(object)
+
+export default fontWeights;

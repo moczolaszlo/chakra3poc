@@ -1,4 +1,7 @@
 import { defineSemanticTokens } from "@chakra-ui/react";
-import object from "./semanticColors.json";
+import dataObject from "./semanticColors.json";
+import { withSlashes } from "../themeUtils";
 
-export const colors = defineSemanticTokens.colors(object);
+const semanticColors = defineSemanticTokens.colors(withSlashes(dataObject));
+
+export default semanticColors;
