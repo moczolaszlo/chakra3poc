@@ -1,3 +1,5 @@
+import { TextProps } from "@chakra-ui/react";
+
 export function withSlashes(dataObject: Record<string, any>, prefix: string = ''): Record<string, any> {
     const delimiter = '/';
     const result: Record<string, any> = {};
@@ -26,3 +28,10 @@ export const rem = (input: number | string): number | string => {
     return `${value / 16}rem`;
   };
   
+export const getTextStyle = (as: TextProps['as']) => {
+    if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(as as string)) {
+        console.log(`heading/${as}`)
+        return `heading/${as}`
+    }
+    return undefined
+}
