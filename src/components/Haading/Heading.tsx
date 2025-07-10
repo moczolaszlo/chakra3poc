@@ -1,4 +1,4 @@
-import { Heading as ChakraHeading, type HeadingProps } from "@chakra-ui/react"
+import { Heading as ChakraHeading, type HeadingProps } from "@chakra-ui/react";
 import { getTextStyle } from "../../theme/themeUtils";
 
 export type { HeadingProps }

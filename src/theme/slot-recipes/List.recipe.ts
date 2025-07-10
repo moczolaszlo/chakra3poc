@@ -1,7 +1,7 @@
 import { defineSlotRecipe } from "@chakra-ui/react"
 import { rem } from "../themeUtils";
 
-export const list = defineSlotRecipe({
+const list = defineSlotRecipe({
   className: "list",
   slots: ['root', 'item', 'indicator'],
   base: {

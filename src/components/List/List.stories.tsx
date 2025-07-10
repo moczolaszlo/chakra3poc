@@ -1,6 +1,6 @@
 import { Meta } from "@storybook/react-webpack5";
-import { LuCircleCheck } from "react-icons/lu"
 import List, { ListItem, type ListProps } from "./List";
+import Icons from "../Icons";
 
 const meta: Meta<ListProps> = {
     component: List,
@@ -25,9 +25,9 @@ export const WithIcons = {
     args: {
         children: (
             <>
-                <ListItem icon={<LuCircleCheck />} iconColor='red.50'>Item 1</ListItem>
-                <ListItem icon={<LuCircleCheck />}>Item 2</ListItem>
-                <ListItem icon={<LuCircleCheck />}>Item 3</ListItem>
+                <ListItem icon={<Icons.CheckCircle color='icon/interactive' />}>Item 1</ListItem>
+                <ListItem icon={<Icons.CheckCircle />}>Item 2</ListItem>
+                <ListItem icon={<Icons.CheckCircle color='icon/negative' />}>Item 3</ListItem>
             </>
         ),
     },
