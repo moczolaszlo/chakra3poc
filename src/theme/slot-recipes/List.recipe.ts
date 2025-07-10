@@ -1,9 +1,10 @@
 import { defineSlotRecipe } from "@chakra-ui/react"
 import { rem } from "../themeUtils";
+import { listAnatomy } from "@chakra-ui/react/anatomy";
 
 const list = defineSlotRecipe({
   className: "list",
-  slots: ['root', 'item', 'indicator'],
+  slots: listAnatomy.keys(),
   base: {
     root: {
       "--list-gap": rem(8),

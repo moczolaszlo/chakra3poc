@@ -12,6 +12,7 @@ const Test = () => {
       <Icons.CheckCircle size="24" />
       <Icons.CheckCircle size="32" color='pal/red/50' />
       <Icons.SelectChevron />
+      <Icons.Cross />
     </Box>
   );
 }

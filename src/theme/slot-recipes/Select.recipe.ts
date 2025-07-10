@@ -1,9 +1,10 @@
 import { defineSlotRecipe } from "@chakra-ui/react"
 import { rem } from "../themeUtils";
+import { nativeSelectAnatomy } from "@chakra-ui/react/anatomy";
 
 const select = defineSlotRecipe({
   className: 'select',
-  slots: ['root', 'field', 'indicator'],
+  slots: nativeSelectAnatomy.keys(),
   base: {
     root: {
         height: "fit-content",

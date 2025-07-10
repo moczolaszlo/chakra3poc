@@ -1,6 +1,9 @@
-import CheckCircle from "./CheckCircle";
-import SelectChevron from "./SelectChevron";
+import Cross from "./actions/Cross";
+import CheckCircle from "./statusAndHelp/CheckCircle";
+import SelectChevron from "./uncategorized/SelectChevron";
 
 export default {
   CheckCircle,
-  SelectChevron,}
+  Cross,
+  SelectChevron,
+}

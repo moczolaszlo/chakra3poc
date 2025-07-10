@@ -48,7 +48,7 @@ export const inputConfig: RecipeDefinition<Record<'size', Record<any, SystemStyl
     },
   },
   defaultVariants: {
-    size: 'md',
+    size: 'lg',
   },
 };
 
