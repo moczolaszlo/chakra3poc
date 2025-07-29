@@ -1,5 +1,5 @@
 import Box from "../Box/Box";
-import Heading from "../Haading/Heading";
+import Heading from "../Heading/Heading";
 import Text from "../Text/Text";
 import Icons from "../Icons";
 

@@ -1,6 +1,10 @@
 import { defineGlobalStyles } from "@chakra-ui/react"
 
 const globalCss = defineGlobalStyles({
+  '*': {
+    '--global-font-mono': 'fonts.mono',
+    '--global-font-body': 'fonts.body',
+  },
   body: {
     color: 'text/body',
     textStyle: 'body/lg/regular',

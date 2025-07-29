@@ -2,7 +2,7 @@
   "name": "chakra3poc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "npm run storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,19 +13,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@chakra-ui/cli": "^3.22.0",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
-    "@storybook/react-webpack5": "^9.0.16",
+    "@storybook/react-webpack5": "^9.0.18",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "storybook": "^9.0.16"
+    "chakra-ui-3--cli": "npm:@chakra-ui/cli@3.23.0",
+    "storybook": "^9.0.18"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.22.0",
     "@emotion/react": "^11.14.0",
     "@fontsource-variable/figtree": "^5.2.8",
     "@fontsource-variable/source-code-pro": "^5.2.6",
-    "@storybook/addon-themes": "^9.0.16",
+    "@storybook/addon-themes": "^9.0.18",
+    "chakra-ui-3--react": "npm:@chakra-ui/react@3.23.0",
     "next-themes": "^0.4.6"
   }
 }
