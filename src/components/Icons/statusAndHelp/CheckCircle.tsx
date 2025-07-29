@@ -1,6 +1,6 @@
 import { Icon, type IconProps as ChakraIconProps } from "@chakra-ui/react";
 
-export interface IconProps extends ChakraIconProps {
+export interface IconProps extends Omit<ChakraIconProps, 'size'> {
     size?: '16' | '24' | '32';
 }
 
