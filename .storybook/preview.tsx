@@ -9,6 +9,9 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+    docs: {
+      toc: true,
+    }
   },
   decorators: [
     (Story) => (
@@ -17,6 +20,8 @@ const preview: Preview = {
       </Provider>
     ),
   ],
+  //👇 Enables auto-generated documentation for all stories
+  tags: ['autodocs'],
 };
 
 export default preview;

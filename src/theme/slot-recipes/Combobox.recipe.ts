@@ -1,10 +1,9 @@
 import { defineSlotRecipe } from '@chakra-ui/react';
-import { comboboxAnatomy } from '@chakra-ui/react/anatomy';
 import { inputConfig } from '../recipes/Input.recipe';
 
 const combobox = defineSlotRecipe({
     className: 'combobox',
-    slots: comboboxAnatomy.keys(),
+    slots: ['root', 'control', 'input', 'clearTrigger', 'trigger', 'content', 'itemGroupLabel', 'item', 'itemIndicator'],
     base: {
         root: {},
         control: {

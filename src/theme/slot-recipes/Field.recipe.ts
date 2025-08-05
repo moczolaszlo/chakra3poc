@@ -1,9 +1,8 @@
 import { defineSlotRecipe } from "@chakra-ui/react"
-import { fieldAnatomy } from "@chakra-ui/react/anatomy";
 
 const field = defineSlotRecipe({
   className: 'field',
-  slots: fieldAnatomy.keys(),
+  slots: ['root', 'label', 'input', 'textarea', 'select', 'errorText', 'helperText', 'requiredIndicator'],
   base: {
     root: {},
     label: {

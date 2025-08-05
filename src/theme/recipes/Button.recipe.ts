@@ -66,6 +66,7 @@ const button = defineRecipe({
     alignItems: 'center',
     justifyContent: 'center',
     gap: '8',
+    position: 'relative',
     _disabled: {
       cursor: 'not-allowed',
     },

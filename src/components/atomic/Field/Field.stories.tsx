@@ -1,9 +1,9 @@
-import { Meta, StoryObj } from '@storybook/react-webpack5';
-import Field from './Field';
-import Input from '../Input/Input';
-import Select from '../Select/Select';
-import Textarea from '../Textarea/Textarea';
 import { useState } from 'react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
+
+import { Field, Input, Textarea } from '@chakra-ui/react';
+
+import Select from '../Select/Select';
 
 type StoryArgs = {
     autoresize?: boolean;

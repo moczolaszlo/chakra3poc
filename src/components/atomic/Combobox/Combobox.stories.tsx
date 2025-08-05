@@ -1,8 +1,5 @@
-import { useCombobox, useFilter, useListCollection } from '@ark-ui/react';
+import { Box, Combobox, Field, useCombobox, useFilter, useListCollection } from '@chakra-ui/react';
 import { Meta } from '@storybook/react-webpack5';
-import Field from '../Field/Field';
-import Box from '../Box/Box';
-import Combobox from './Combobox';
 import Icons from '../Icons';
 
 type StoryArgs = {
